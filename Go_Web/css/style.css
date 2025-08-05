@@ -3,11 +3,151 @@ body {
 }
 
 .btn-primary {
-  background-color: #6f42c1;
-  border-color: #6f42c1;
+  background-color: #4f67a7;
+  border-color: #4f67a7;
 }
 
 .btn-primary:hover {
   background-color: #5a349b;
   border-color: #5a349b;
+}
+
+.navbar-custom {
+  background-color: #ffffff;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.navbar-custom.is-stuck {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-custom .nav-link {
+  color: #333;
+  font-weight: 600;
+  margin-left: 1.5rem;
+}
+
+.navbar-custom .nav-link:hover {
+  color: #6f42c1;
+}
+
+#hero {
+  background-color: #ffffff;
+}
+
+.hero-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  color: #6c757d;
+  margin-bottom: 2rem;
+}
+
+.hero-btn.btn-primary {
+  padding: 12px 32px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+#why-us {
+  background-color: #6f42c1;
+  color: #ffffff;
+}
+
+#why-us h2 {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.why-us-card {
+  background-color: #ffffff;
+  color: #333;
+  border: none;
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.why-us-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.why-us-card .icon-circle {
+  width: 80px;
+  height: 80px;
+  background-color: #f1f3f5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.why-us-card .icon-circle img {
+  width: 40px;
+  height: 40px;
+}
+
+.why-us-card .card-title {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.why-us-card .card-text {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.why-us-grid-container {
+  display: grid;
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .why-us-grid-container {
+    grid-template-columns: 1fr 1.5fr;
+    gap: 2rem;
+  }
+}
+
+.scroller {
+  max-width: 900px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.scroller-inner {
+  display: flex;
+  gap: 1rem;
+  padding-block: 1rem;
+}
+
+.scroller img {
+  height: 40px;
+}
+
+.scroller[data-animated='true'] {
+  overflow: hidden;
+  -webkit-mask: linear-gradient(90deg, white 20%, white 80%);
+  mask: linear-gradient(90deg, white 20%, white 80%);
+}
+
+.scroller[data-animated='true'] .scroller-inner {
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll 30s linear infinite;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(-50%);
+  }
 }
