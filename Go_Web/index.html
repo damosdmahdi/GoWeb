@@ -185,42 +185,26 @@
         id="tools"
         class="py-5"
       >
-        <div class="container">
-          <h2 class="text-center mb-4">Tools & Language</h2>
-        </div>
         <div
           class="scroller"
           data-animated="true"
         >
-          <div class="scroller-inner">
-            <img
-              src="assets/icons/bootstrap-logo.svg"
-              alt="Bootstrap"
-            />
-            <img
-              src="assets/icons/html5-logo.svg"
-              alt="HTML5"
-            />
-            <img
-              src="assets/icons/css3-logo.svg"
-              alt="CSS3"
-            />
-            <img
-              src="assets/icons/javascript-logo.svg"
-              alt="JavaScript"
-            />
-            <img
-              src="assets/icons/php-logo.svg"
-              alt="PHP"
-            />
-            <img
-              src="assets/icons/figma-logo.svg"
-              alt="Figma"
-            />
-            <img
-              src="assets/icons/sass-logo.svg"
-              alt="Sass"
-            />
+          <div class="scroller-track">
+            <div class="scroller-inner">
+              <img
+                src="assets/icons/html.png"
+                alt="HTML5"
+              />
+
+              <img
+                src="assets/icons/css.png"
+                alt="CSS3"
+              />
+              <img
+                src="assets/icons/js.png"
+                alt="JavaScript"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -263,12 +247,21 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
     <script>
       const scrollers = document.querySelectorAll('.scroller');
       if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        addAnimation();
+      }
+
+      function addAnimation() {
         scrollers.forEach((scroller) => {
+          scroller.setAttribute('data-animated', 'true');
+
           const scrollerInner = scroller.querySelector('.scroller-inner');
-          const scrollerContent = Array.fromz(scrollerInner.children);
+          const scrollerContent = Array.from(scrollerInner.children);
+
+          // Duplikasi item untuk efek loop yang mulus
           scrollerContent.forEach((item) => {
             const duplicatedItem = item.cloneNode(true);
             duplicatedItem.setAttribute('aria-hidden', true);
