@@ -1,0 +1,103 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+.btn-primary {
+  background-color: #4f67a7;
+  border-color: #4f67a7;
+}
+
+.btn-primary:hover {
+  background-color: #5a349b;
+  border-color: #5a349b;
+}
+
+.navbar-custom {
+  background-color: #ffffff;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.navbar-custom.is-stuck {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-custom .nav-link {
+  color: #333;
+  font-weight: 600;
+  margin-left: 1.5rem;
+}
+
+.navbar-custom .nav-link:hover {
+  color: #6f42c1;
+}
+
+#hero {
+  background-color: #ffffff;
+}
+.navbar-brand img {
+  height: 30px;
+}
+.project-title {
+  font-weight: bold;
+  margin-top: 30px;
+}
+.section-title {
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: justify;
+}
+.tools img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  margin-bottom: 10%;
+  margin-top: 30px;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+  .tools img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.tp {
+  text-align: justify;
+}
+
+.btn {
+  color: #1866b3;
+}
+.btn-c {
+  color: #ffffff;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 10%;
+}
+
+.carousel-indicators .active {
+  background-color: #1866b3;
+}
+
+.sidebar-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sidebar-scroll::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.sidebar-scroll::-webkit-scrollbar-thumb {
+  background: #1866b3;
+  border-radius: 10px;
+}
+
+.sidebar-scroll::-webkit-scrollbar-thumb:hover {
+  background: #1866b3;
+}

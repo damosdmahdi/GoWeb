@@ -13,7 +13,7 @@
     />
     <link
       rel="stylesheet"
-      href="css/style.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
     <link
       rel="preconnect"
@@ -28,15 +28,25 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="css/style.css"
+    />
   </head>
   <body>
     <header class="navbar navbar-expand-lg sticky-top navbar-custom">
       <div class="container">
         <a
-          class="navbar-brand fw-bold"
+          class="navbar-brand d-flex align-items-center"
           href="#"
-          >Go Web</a
         >
+          <img
+            src="assets/logo/Go_Web.png"
+            alt="Go Web Logo"
+            class="navbar-logo"
+          />
+          <span class="fw-bold ms-2">Go Web</span>
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -70,8 +80,15 @@
             <li class="nav-item">
               <a
                 class="nav-link"
+                href="#team"
+                >Tim</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
                 href="#footer"
-                >Contact Us</a
+                >Kontak</a
               >
             </li>
           </ul>
@@ -87,8 +104,8 @@
         <div class="container">
           <div class="row align-items-center">
             <div class="col-lg-6 col-md-12 text-center text-lg-start mb-4 mb-lg-0">
-              <h1 class="hero-title">Mari wujudkan website keinginan anda!</h1>
-              <p class="hero-subtitle">Kami siap membantu Anda mewujudkan website impian.</p>
+              <h1 class="hero-title">Mari Wujudkan Website Keinginan Anda!</h1>
+              <p class="hero-subtitle">Kami siap membantu Anda mewujudkan website impian dengan desain modern, performa cepat, dan dukungan penuh.</p>
               <a
                 href="#footer"
                 class="btn btn-primary btn-lg hero-btn"
@@ -111,70 +128,57 @@
         class="py-5"
       >
         <div class="container">
-          <div class="row mb-5">
-            <div class="col text-center">
-              <h2>Mengapa Harus Di Go Web</h2>
-            </div>
-          </div>
-          <div class="why-us-grid-container">
-            <div class="why-us-grid-item">
-              <div class="card why-us-card text-center">
-                <div class="card-body">
-                  <div class="icon-circle mx-auto mb-3">
-                    <img
-                      src="assets/icons/rocket-2-line (1).png"
-                      alt="Ikon Proses Cepat"
-                    />
-                  </div>
-                  <h5 class="card-title">Proses Cepat</h5>
-                  <p class="card-text">Lorem ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <h2 class="text-center text-white">Mengapa Harus Di Go Web</h2>
+          <div class="why-us-grid-container mt-5">
+            <div class="card why-us-card text-center card-proses-cepat">
+              <div class="card-body">
+                <div class="icon-circle mx-auto mb-3">
+                  <img
+                    src="assets/icons/rocket-2-line (1).png"
+                    alt="Ikon Proses Cepat"
+                  />
                 </div>
+                <h5 class="card-title">Proses Cepat</h5>
+                <p class="card-text">Proses pengembangan yang efisien memastikan website Anda online lebih cepat tanpa mengorbankan kualitas.</p>
               </div>
             </div>
-            <div class="why-us-grid-item">
-              <div class="row">
-                <div class="col-md-12 mb-4">
-                  <div class="card why-us-card text-center">
-                    <div class="card-body">
-                      <div class="icon-circle mx-auto mb-3">
-                        <img
-                          src="assets/icons/rocket-2-line.png"
-                          alt="Ikon Biaya Terjangkau"
-                        />
-                      </div>
-                      <h5 class="card-title">Biaya Terjangkau</h5>
-                      <p class="card-text">Lorem ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    </div>
-                  </div>
+
+            <div class="card why-us-card text-center card-biaya">
+              <div class="card-body">
+                <div class="icon-circle mx-auto mb-3">
+                  <img
+                    src="assets/icons/rocket-2-line.png"
+                    alt="Ikon Biaya Terjangkau"
+                  />
                 </div>
-                <div class="col-md-6 mb-4 mb-md-0">
-                  <div class="card why-us-card text-center">
-                    <div class="card-body">
-                      <div class="icon-circle mx-auto mb-3">
-                        <img
-                          src="assets/icons/hard-drive-2-line.png"
-                          alt="Ikon Server Sendiri"
-                        />
-                      </div>
-                      <h5 class="card-title">Server Sendiri</h5>
-                      <p class="card-text">Lorem ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    </div>
-                  </div>
+                <h5 class="card-title">Biaya Terjangkau</h5>
+                <p class="card-text">Kami menawarkan solusi web berkualitas tinggi dengan harga yang kompetitif dan transparan.</p>
+              </div>
+            </div>
+
+            <div class="card why-us-card text-center card-server">
+              <div class="card-body">
+                <div class="icon-circle mx-auto mb-3">
+                  <img
+                    src="assets/icons/hard-drive-2-line.png"
+                    alt="Ikon Server Sendiri"
+                  />
                 </div>
-                <div class="col-md-6">
-                  <div class="card why-us-card text-center">
-                    <div class="card-body">
-                      <div class="icon-circle mx-auto mb-3">
-                        <img
-                          src="assets/icons/rocket-2-line (2).png"
-                          alt="Ikon Online Support"
-                        />
-                      </div>
-                      <h5 class="card-title">Online Support</h5>
-                      <p class="card-text">Lorem ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    </div>
-                  </div>
+                <h5 class="card-title">Server Sendiri</h5>
+                <p class="card-text">Fleksibilitas penuh dengan opsi hosting di server kami atau server pilihan Anda sendiri.</p>
+              </div>
+            </div>
+
+            <div class="card why-us-card text-center card-online-support">
+              <div class="card-body">
+                <div class="icon-circle mx-auto mb-3">
+                  <img
+                    src="assets/icons/rocket-2-line (2).png"
+                    alt="Ikon Online Support"
+                  />
                 </div>
+                <h5 class="card-title">Online Support</h5>
+                <p class="card-text">Tim kami siap memberikan dukungan teknis dan menjawab pertanyaan Anda kapan pun dibutuhkan.</p>
               </div>
             </div>
           </div>
@@ -183,28 +187,38 @@
 
       <section
         id="tools"
-        class="py-5"
+        class="py-4"
       >
-        <div
-          class="scroller"
-          data-animated="true"
-        >
-          <div class="scroller-track">
-            <div class="scroller-inner">
-              <img
-                src="assets/icons/html.png"
-                alt="HTML5"
-              />
-
-              <img
-                src="assets/icons/css.png"
-                alt="CSS3"
-              />
-              <img
-                src="assets/icons/js.png"
-                alt="JavaScript"
-              />
-            </div>
+        <div class="scroller">
+          <div class="scroller-inner">
+            <img
+              src="assets/icons/html.png"
+              alt="HTML5"
+            /><img
+              src="assets/icons/css.png"
+              alt="CSS3"
+            /><img
+              src="assets/icons/js.png"
+              alt="JavaScript"
+            /><img
+              src="assets/icons/Bootstrap.png"
+              alt="Bootstrap"
+            /><img
+              src="assets/icons/Laravel.png"
+              alt="Laravel"
+            /><img
+              src="assets/icons/php.png"
+              alt="PHP"
+            /><img
+              src="assets/icons/nodejs.png"
+              alt="Node.js"
+            /><img
+              src="assets/icons/Wordpress.png"
+              alt="WordPress"
+            /><img
+              src="assets/icons/Figma.png"
+              alt="Figma"
+            />
           </div>
         </div>
       </section>
@@ -214,7 +228,129 @@
         class="py-5"
       >
         <div class="container">
-          <h2 class="text-center">Our Tim</h2>
+          <h2 class="text-center">Tim Kami</h2>
+          <div class="row align-items-center team-member-row mt-5 mb-5 pb-lg-5">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+              <div
+                class="accordion team-accordion-wrapper"
+                id="accordionTim1"
+              >
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse1-1"
+                      aria-expanded="true"
+                      aria-controls="collapse1-1"
+                    >
+                      Adri Hidayat
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse1-1"
+                    class="accordion-collapse collapse show"
+                    data-bs-parent="#accordionTim1"
+                  >
+                    <div class="accordion-body">Sebagai Full-Stack Developer, saya menggabungkan keahlian desain antarmuka dengan logika backend yang kuat untuk menciptakan aplikasi web yang fungsional dan intuitif.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse1-2"
+                      aria-expanded="false"
+                      aria-controls="collapse1-2"
+                    >
+                      Pendidikan & Keahlian
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse1-2"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionTim1"
+                  >
+                    <div class="accordion-body">Lulusan Teknik Informatika dengan keahlian utama pada HTML, CSS, JavaScript, Bootstrap, dan framework backend modern.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 d-flex justify-content-center">
+              <div class="team-image-wrapper">
+                <img
+                  src="https://i.pravatar.cc/300?u=adri"
+                  alt="Foto Adri Hidayat"
+                  class="img-fluid team-photo"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-center team-member-row mt-5 flex-lg-row-reverse">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+              <div
+                class="accordion team-accordion-wrapper"
+                id="accordionTim2"
+              >
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse2-1"
+                      aria-expanded="true"
+                      aria-controls="collapse2-1"
+                    >
+                      Febian Eldriano
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse2-1"
+                    class="accordion-collapse collapse show"
+                    data-bs-parent="#accordionTim2"
+                  >
+                    <div class="accordion-body">
+                      Saya adalah spesialis UI/UX dan Project Manager, memastikan setiap proyek berjalan sesuai rencana, tepat waktu, dan memenuhi standar kualitas tertinggi dari segi visual maupun fungsional.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse2-2"
+                      aria-expanded="false"
+                      aria-controls="collapse2-2"
+                    >
+                      Pendidikan & Keahlian
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse2-2"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionTim2"
+                  >
+                    <div class="accordion-body">Memiliki latar belakang Desain Komunikasi Visual dan sertifikasi manajemen proyek, dengan fokus pada user experience.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 d-flex justify-content-center">
+              <div class="team-image-wrapper">
+                <img
+                  src="https://i.pravatar.cc/300?u=rekan"
+                  alt="Foto Rekan Tim"
+                  class="img-fluid team-photo"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -223,7 +359,59 @@
         class="py-5"
       >
         <div class="container">
-          <h2 class="text-center">Website Creation Flow</h2>
+          <h2 class="text-center text-white">Alur Kerja Kami</h2>
+          <div class="flow-box mt-5">
+            <div class="row">
+              <div class="col-md-6 d-flex flex-column justify-content-center align-items-center text-justify">
+                <img
+                  src="/Go_Web/assets/image/Document management and file organization.png"
+                  alt="Flow Illustration"
+                  class="img-fluid w-50"
+                />
+                <p class="mt-4 fontFlow">Kami percaya proses yang terstruktur adalah kunci keberhasilan. Alur kerja kami dirancang untuk memastikan transparansi, efisiensi, dan hasil akhir yang memuaskan.</p>
+                <div class="logo-text text-center">Go Web</div>
+              </div>
+              <div class="col-md-6">
+                <div class="scroll-steps">
+                  <div class="d-flex align-items-start step-card">
+                    <div class="step-number">01</div>
+                    <div>
+                      <strong>Konsultasi & Analisis</strong>
+                      <p>Kami mulai dengan diskusi untuk memahami visi, tujuan, dan target audiens Anda secara mendalam.</p>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-start step-card">
+                    <div class="step-number">02</div>
+                    <div>
+                      <strong>Penawaran & Perjanjian</strong>
+                      <p>Kami memberikan penawaran harga dan waktu pengerjaan yang transparan. Proses dimulai setelah ada kesepakatan.</p>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-start step-card">
+                    <div class="step-number">03</div>
+                    <div>
+                      <strong>Desain & Pengembangan</strong>
+                      <p>Proses coding dan implementasi desain. Anda akan melihat kemajuan secara berkala.</p>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-start step-card">
+                    <div class="step-number">04</div>
+                    <div>
+                      <strong>Revisi & Finalisasi</strong>
+                      <p>Sesi review bersama Anda untuk memastikan semua detail sesuai. Revisi kecil dilakukan jika diperlukan.</p>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-start step-card">
+                    <div class="step-number">05</div>
+                    <div>
+                      <strong>Peluncuran & Dukungan</strong>
+                      <p>Website diunggah ke hosting, dapat diakses publik, dan kami siap memberikan dukungan lanjutan.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -232,36 +420,176 @@
         class="py-5"
       >
         <div class="container">
-          <h2 class="text-center">Projek - project kami</h2>
+          <h2 class="text-center">Projek Kami</h2>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-4">
+            <div class="col">
+              <a
+                href="detailProjek/detailpjrk.html"
+                class="project-card-link"
+                ><div class="card h-100 project-card">
+                  <img
+                    src="../Go_Web/assets/image/download.jpeg"
+                    class="card-img-top"
+                    alt="Gambar Proyek 1"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Website Toko Online</h5>
+                    <p class="card-text">Platform e-commerce modern dengan sistem manajemen inventaris dan pembayaran online.</p>
+                  </div>
+                  <div class="card-footer"><span class="badge rounded-pill">E-commerce</span> <span class="badge rounded-pill">Bootstrap</span></div>
+                </div></a
+              >
+            </div>
+            <div class="col">
+              <a
+                href="project-detail-2.html"
+                class="project-card-link"
+                ><div class="card h-100 project-card">
+                  <img
+                    src="https://via.placeholder.com/400x300.png/3D5595/FFFFFF?text=Project+2"
+                    class="card-img-top"
+                    alt="Gambar Proyek 2"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Website Profil Perusahaan</h5>
+                    <p class="card-text">Desain elegan dan profesional untuk meningkatkan citra dan kehadiran online perusahaan.</p>
+                  </div>
+                  <div class="card-footer"><span class="badge rounded-pill">Company Profile</span> <span class="badge rounded-pill">CSS Grid</span></div>
+                </div></a
+              >
+            </div>
+            <div class="col">
+              <a
+                href="project-detail-3.html"
+                class="project-card-link"
+                ><div class="card h-100 project-card">
+                  <img
+                    src="https://via.placeholder.com/400x300.png/4CAF50/FFFFFF?text=Project+3"
+                    class="card-img-top"
+                    alt="Gambar Proyek 3"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Landing Page Produk</h5>
+                    <p class="card-text">Halaman arahan yang fokus pada konversi dengan desain menarik dan copywriting persuasif.</p>
+                  </div>
+                  <div class="card-footer"><span class="badge rounded-pill">Landing Page</span> <span class="badge rounded-pill">JavaScript</span></div>
+                </div></a
+              >
+            </div>
+          </div>
         </div>
       </section>
     </main>
 
     <footer
       id="footer"
-      class="py-4"
+      class="footer-custom"
     >
-      <div class="container">
-        <p class="text-center">Go Web &copy; 2025</p>
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+            <h5 class="footer-brand">Go Web</h5>
+            <p>Membantu Anda mewujudkan website impian dengan desain modern, performa cepat, dan dukungan penuh.</p>
+          </div>
+          <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+            <h5 class="footer-heading">Tautan</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a
+                  href="#hero"
+                  class="footer-link"
+                  >Home</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#projects"
+                  class="footer-link"
+                  >Project</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#team"
+                  class="footer-link"
+                  >Tim</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#footer"
+                  class="footer-link"
+                  >Kontak</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <h5 class="footer-heading">Hubungi Kami</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2 d-flex">
+                <a
+                  href="https://wa.me/6281289493609"
+                  target="_blank"
+                  class="footer-link"
+                  ><i class="bi bi-whatsapp me-2"></i>Adri Hidayat</a
+                >
+              </li>
+              <li class="mb-2 d-flex">
+                <a
+                  href="https://wa.me/6289516114883"
+                  target="_blank"
+                  class="footer-link"
+                  ><i class="bi bi-whatsapp me-2"></i>Febian Eldriano</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <h5 class="footer-heading">Ikuti Kami</h5>
+            <div class="social-icons">
+              <a
+                href="https://www.linkedin.com/in/adri-hidayat-745486203/"
+                target="_blank"
+                class="social-icon"
+                aria-label="LinkedIn Adri Hidayat"
+                ><img
+                  src="assets/icons/link.png"
+                  alt="LinkedIn Logo"
+                  class="social-logo-img"
+              /></a>
+              <a
+                href="https://www.linkedin.com/in/febian-eldriano-7b0a05218/"
+                target="_blank"
+                class="social-icon"
+                aria-label="LinkedIn Febian Eldriano"
+                ><img
+                  src="assets/icons/link.png"
+                  alt="LinkedIn Logo"
+                  class="social-logo-img"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-bar">
+        <div class="container text-center py-3"><p class="mb-0">&copy; 2025 Go Web. All Rights Reserved.</p></div>
       </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
+      // Infinite Scroller
       const scrollers = document.querySelectorAll('.scroller');
       if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
         addAnimation();
       }
-
       function addAnimation() {
         scrollers.forEach((scroller) => {
           scroller.setAttribute('data-animated', 'true');
-
           const scrollerInner = scroller.querySelector('.scroller-inner');
           const scrollerContent = Array.from(scrollerInner.children);
-
-          // Duplikasi item untuk efek loop yang mulus
           scrollerContent.forEach((item) => {
             const duplicatedItem = item.cloneNode(true);
             duplicatedItem.setAttribute('aria-hidden', true);
@@ -269,6 +597,26 @@
           });
         });
       }
+
+      // Fade-in on Scroll
+      const allSections = document.querySelectorAll('section');
+      const sectionObserver = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('fade-in');
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        {
+          threshold: 0.15,
+        }
+      );
+      allSections.forEach((section) => {
+        section.classList.add('fade-out');
+        sectionObserver.observe(section);
+      });
     </script>
   </body>
 </html>
