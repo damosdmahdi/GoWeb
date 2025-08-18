@@ -336,6 +336,9 @@ h2 {
   margin: auto;
   box-shadow: var(--subtle-shadow);
 }
+.flow-logo {
+  height: 40px;
+}
 
 .scroll-steps {
   max-height: 350px;
@@ -384,6 +387,9 @@ h2 {
   font-weight: 600;
   margin-top: 20px;
   color: var(--text-muted-color);
+}
+.fontFlow {
+  text-align: justify;
 }
 .scroll-steps::-webkit-scrollbar {
   width: 8px;
